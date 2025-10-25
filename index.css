@@ -94,6 +94,22 @@ body{
     z-index: 10;
 }
 
+.dog-body {
+    position:absolute;
+    width: 11.3vmax;
+    height:4.5vmax;
+    align-items: flex-end;
+    display:flex;
+    justify-content: center;
+    left:3.75vmax;
+    bottom:0.2vmax;
+    z-index: -2;
+    border-top-left-radius: 3vmax;
+    border-top-right-radius: 6vmax;
+    border-bottom-right-radius: 1.5vmax;
+    background-color: #ff702e;
+}
+
 @keyframes blink {
     0%, 90%, 100%{
         transform: scaleY(1);
