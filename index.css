@@ -66,3 +66,28 @@ body{
     border-bottom-right-radius: 1vmax;
     background-color: #1c3130;
 }
+
+.dog-eye-left,
+.dog-eye-right {
+    position: absolute;
+    top:-0.9vmax;
+    width: 0.3vmax;
+    height: 0.2vmax;
+    border-radius: 50%;
+    background-color: #1c3130;
+}
+
+.dog-eye-left {
+    left: 1vmax;
+}
+
+.dog-eye-right {
+    left: 2.4vmax;
+}
+
+.dog-eyes {
+    position:absolute;
+    margin-top: 58.0px;
+    margin-left: 7px;
+    z-index: 10;
+}
