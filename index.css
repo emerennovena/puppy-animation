@@ -1,0 +1,68 @@
+body{
+    justify-content:center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    background-image:linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+.main {
+    position: relative;
+    width: 30vmax;
+    height: 30vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dog {
+    position:relative;
+    width: 20vmax;
+    height:9vmax;
+}
+
+.dog::before {
+    content:'';
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:1.2vmax;
+    border-radius: 50%;
+}
+
+.dog-head {
+    position:absolute;
+    left:1.2vmax;
+    bottom:0;
+    width:7vmax;
+    height:5vmax;
+    border-top-left-radius: 4.40vmax;
+    border-top-right-radius: 4.40vmax;
+    border-bottom-left-radius: 3vmax;
+    border-bottom-right-radius: 3vmax;
+    background-color: #ff8147;
+}
+
+.dog-snout {
+    position:absolute;
+    left:-0.1vmax;
+    bottom:0;
+    width:5.4vmax;
+    height:2.5vmax;
+    border-top-right-radius: 3vmax;
+    border-bottom-right-radius: 3vmax;
+    border-bottom-left-radius: 4.5vmax;
+    background-color: #d7dbd2;
+}
+
+.dog-snout::before {
+    content:'';
+    position:absolute;
+    left:2%;
+    width:0.9vmax;
+    height:0.5vmax;
+    border-bottom-left-radius: 1vmax;
+    border-bottom-right-radius: 1vmax;
+    background-color: #1c3130;
+}
