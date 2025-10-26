@@ -26,21 +26,23 @@ body{
     content:'';
     position:absolute;
     bottom:0;
-    width:100%;
+    width:80%;
     height:1.2vmax;
     border-radius: 50%;
+    background-color: rgba(28, 49, 48, 0.1);
+    z-index:-2;
 }
 
 .dog-head {
     position:absolute;
     left:1.2vmax;
     bottom:0;
-    width:7vmax;
+    width:6.5vmax;
     height:5vmax;
     border-top-left-radius: 4.40vmax;
     border-top-right-radius: 4.40vmax;
     border-bottom-left-radius: 3vmax;
-    border-bottom-right-radius: 3vmax;
+    border-bottom-right-radius: 2.5vmax;
     background-color: #ff8147;
 }
 
@@ -105,9 +107,36 @@ body{
     bottom:0.2vmax;
     z-index: -2;
     border-top-left-radius: 3vmax;
-    border-top-right-radius: 6vmax;
-    border-bottom-right-radius: 1.5vmax;
+    border-top-right-radius: 5vmax;
+    border-bottom-right-radius: 2vmax;
     background-color: #ff702e;
+}
+
+.dog-ear-left{
+    position:absolute;
+    width:4vmax;
+    height:1vmax;
+    border-bottom-left-radius: 4vmax;
+    border-bottom-right-radius:1.5vmax;
+    background-color: #e26538;
+    top:4.1vmax;
+    left:1.3vmax;
+    transform-origin: bottom left;
+    z-index: -2;
+}
+
+.dog-ear-right {
+    position:absolute;
+    width:4vmax;
+    height:1vmax;
+    top:3vmax;
+    right:13vmax;
+    transform-origin: bottom right;
+    transform: rotateZ(-30deg);
+    border-bottom-left-radius: 1.5vmax;
+    border-bottom-right-radius: 4vmax;
+    background-color: #e26538;
+    z-index:-2;
 }
 
 @keyframes blink {
