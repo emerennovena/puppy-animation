@@ -20,6 +20,7 @@ body{
     position:relative;
     width: 20vmax;
     height:9vmax;
+    z-index:0;
 }
 
 .dog::before {
@@ -72,7 +73,7 @@ body{
 .dog-eye-left,
 .dog-eye-right {
     position: absolute;
-    top:-0.9vmax;
+    top:2.5vmax;
     width: 0.3vmax;
     height: 0.2vmax;
     border-radius: 50%;
@@ -82,17 +83,17 @@ body{
 }
 
 .dog-eye-left {
-    left: 1vmax;
+    left: 1.2vmax;
 }
 
 .dog-eye-right {
-    left: 2.4vmax;
+    left: 2.6vmax;
 }
 
 .dog-eyes {
     position:absolute;
-    margin-top: 58.0px;
-    margin-left: 7px;
+    margin-top: 3.5vmax;
+    margin-left: 0.4vmax;
     z-index: 10;
 }
 
@@ -139,11 +140,83 @@ body{
     z-index:-2;
 }
 
+.dog-front-leg {
+    position:absolute;
+    width:3vmax;
+    height:1.8vmax;
+    left:3vmax;
+    border-radius: 40%/60%;
+    background-color: #ff8147;
+    transform: rotateZ(-8deg);
+}
+
+.dog-front-paw {
+    position:absolute;
+    left:30%;
+    bottom:3%;
+    width:12%;
+    height:17%;
+    border-radius: 40%/60%;
+    background-color: #d7dbd2;
+    transform: rotateZ(-11deg);
+    border-top-left-radius: 4vmax;
+    border-top-right-radius: 4vmax;
+}
+
+.dog-back-paw {
+    position:absolute;
+    left:58%;
+    bottom:0;
+    top:80%;
+    width:12%;
+    height:17%;
+    border-radius: 40%/60%;
+    background-color: #d7dbd2;
+    transform: rotateZ(-10deg);
+    border-top-left-radius: 4vmax;
+    border-top-right-radius: 4vmax;
+}
+
+.dog-back-leg {
+    position:absolute;
+    width:3vmax;
+    height:1.8vmax;
+    left:8.5vmax;
+    border-radius: 40%/60%;
+    background-color: #ff8147;
+    transform: rotateZ(-8deg);
+}
+
+.dog-tail{
+    position: absolute;
+    width:34%;
+    height:20%;
+    left:90%;
+    bottom:3%;
+    border-radius: 1.5vmax;
+    background-color: #e96839;
+    z-index:-2;
+    transform-origin: left center;
+    animation: wag 2s infinite;
+}
+
 @keyframes blink {
     0%, 90%, 100%{
         transform: scaleY(1);
     }
     95%{
         transform: scaleY(0.2);
+    }
+}
+
+@keyframes wag {
+    0%{
+        transform:rotateZ(0deg);
+    }
+    50%{
+        transform:rotateZ(-20deg);
+    }
+    100%{
+        transform:rotateZ(0deg);
     }
 }
